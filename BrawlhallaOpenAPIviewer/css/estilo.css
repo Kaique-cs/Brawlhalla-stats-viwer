@@ -1,0 +1,208 @@
+header{
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre a imagem e a navbar */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo */
+    width: 100%; /* Define a largura do header como 100% */
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    width: 12%; /* Ajuste a altura da imagem conforme necessário */
+    margin-right: 20px; /* Espaçamento entre a imagem e a navbar */
+}
+
+nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+    display: flex; /* Faz os itens da lista ficarem em linha */
+}
+
+nav li {
+    margin: 0 15px; /* Espaçamento entre os itens da lista */
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #000000;
+    font-size: 30px;
+    text-decoration: underline;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+text-align: center;
+background-color: white;
+padding: 20px;   
+border-radius: 10px;
+box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+width: 1400px;
+
+}
+
+form{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+fieldset{
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+legend{
+    font-weight: bold;
+    color: #007bff;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="month"],
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="radio"]{
+    margin-right: 5px;
+}
+input[type ="submit"],
+input[type="reset"]{
+    background-color: #007bff;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form label
+form input[type="radio"],
+form select{
+    display: inline-block;
+    vertical-align: middle;
+}
+form select{
+    width: calc(100%-10px);
+}
+input[type="submit"],
+input[type="reset"]{
+    width:48%;
+    margin-right: 4%;
+}
+
+input[type="reset"]{
+    margin-right:0;
+}
+
+@media (max-height: 100vh) {
+  body {
+    flex-direction: column;
+  }
+
+}
+
+main{
+    padding: 200px;
+}
+
+footer{
+    text-align: center;
+    background: #ffffff; /*cor da tag*/
+    padding: 0px 0;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+}
+
+
+h2{
+  color:red;  
+}
+
+p{
+    font-size: 18px;
+    margin-top:20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    padding: 20px;   
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+}
+
+.carouselImages {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.legend {
+    display: none; /* Esconde todas as lendas inicialmente */
+    flex: 0 0 100%; /* Cada lenda ocupa 100% da largura do carrossel */
+}
+
+.legend.active {
+    display: block; /* Exibe apenas a lenda ativa */
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 50px;
+}
+
+.next {
+    right: 50px;
+}
